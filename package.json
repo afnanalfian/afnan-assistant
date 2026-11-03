@@ -1,0 +1,24 @@
+{
+  "name": "afnan-assistant",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Afnan Assistant — planner, habit tracker & manajemen keuangan pribadi (offline)",
+  "scripts": {
+    "serve": "npx http-server www -p 8080 -c-1",
+    "android:init": "npx cap add android && node scripts/patch-android.mjs && npx cap sync android",
+    "android:sync": "node scripts/patch-android.mjs && npx cap sync android",
+    "android:open": "npx cap open android",
+    "apk": "npm run android:sync && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/filesystem": "^7.0.0",
+    "@capacitor/local-notifications": "^7.0.0",
+    "@capacitor/share": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
+}
