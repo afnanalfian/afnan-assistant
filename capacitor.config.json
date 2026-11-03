@@ -1,6 +1,6 @@
 {
   "appId": "id.afnan.assistant",
-  "appName": "Afnan Assistant",
+  "appName": "Ady Assistant",
   "webDir": "www",
   "android": {
     "allowMixedContent": false,
